@@ -44,8 +44,8 @@ function updateParticles() {
 
 		start.x = p.x; start.y = p.y;
 		// at present this is a random step size
-		p.dx = diffusionDistance*Math.random()-0.5; 
-		p.dy = diffusionDistance*Math.random()-0.5;
+		p.dx = diffusionDistance*(Math.random() -0.5); 
+		p.dy = diffusionDistance*(Math.random() -0.5);
 		checkWallCollision(p);
 		
 		p.x += p.dx; p.y += p.dy;
